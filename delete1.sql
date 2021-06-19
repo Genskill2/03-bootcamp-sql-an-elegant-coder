@@ -1,9 +1,9 @@
---delete mappings
-DELETE FROM books_subjects
-WHERE subjects IN (9);
---delete the subject
-DELETE FROM subjects
-WHERE id = 9
+DELETE FROM books_subjects WHERE subjects IN (
+        SELECT id
+        FROM subjects
+        WHERE name = "History"
+        );
+DELETE FROM subjects WHERE name = "History";
 
 
 
