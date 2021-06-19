@@ -1,4 +1,4 @@
-DELETE FROM books_subjects WHERE subjects IN (
+DELETE FROM books_subjects WHERE subject IN (
         SELECT id
         FROM subjects
         WHERE name = "History"

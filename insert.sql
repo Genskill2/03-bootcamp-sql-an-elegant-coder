@@ -48,7 +48,7 @@ INSERT INTO subjects (name)
 
 -- insert into books_subjects
 
-INSERT INTO books_subjects (books, subjects)
+INSERT INTO books_subjects (book, subject)
     VALUES
         (1, 1),
         (1, 2),

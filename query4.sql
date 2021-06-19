@@ -1,3 +1,3 @@
 SELECT s.name
 FROM books b, subjects s, books_subjects bs
-WHERE b.id = bs.books and s.id = bs.subjects and b.title = "Atomic Habits"; 
+WHERE b.id = bs.book and s.id = bs.subject and b.title = "Atomic Habits"; 

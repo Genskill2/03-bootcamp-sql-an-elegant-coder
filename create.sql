@@ -25,6 +25,6 @@ CREATE TABLE subjects (
 -- create table books_subjects
 
 CREATE TABLE books_subjects (
-    books INTEGER REFERENCES books(id),
-    subjects INTEGER REFERENCES subjects(id)
+    book INTEGER REFERENCES books(id),
+    subject INTEGER REFERENCES subjects(id)
 );
